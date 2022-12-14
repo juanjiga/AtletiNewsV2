@@ -26,7 +26,7 @@ public class MainActivity extends AppCompatActivity {
     static final String DATA_DESCRIPTION = "D";
     static LinkedList<HashMap<String, String>> data;
     static String rssUrlAs = "http://masdeporte.as.com/tag/rss/atletico_madrid/a";
-    static String rssUrlMarca = "http://estaticos.marca.com/rss/futbol/atletico.xml";
+    static String rssUrlMarca = "https://e00-marca.uecdn.es/rss/futbol/atletico.xml";
     static String rssUrlMundoAtleti ="http://www.mundodeportivo.com/feed/rss/futbol/atletico-madrid";
     private ProgressDialog progressDialog;
 
