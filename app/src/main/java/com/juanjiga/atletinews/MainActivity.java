@@ -25,9 +25,9 @@ public class MainActivity extends AppCompatActivity {
     static final String DATA_LINK  = "L";
     static final String DATA_DESCRIPTION = "D";
     static LinkedList<HashMap<String, String>> data;
-    static String rssUrlAs = "http://masdeporte.as.com/tag/rss/atletico_madrid/a";
+    static String rssUrlAs = "https://futbol.as.com/rss/futbol/primera.xml";
     static String rssUrlMarca = "https://e00-marca.uecdn.es/rss/futbol/atletico.xml";
-    static String rssUrlMundoAtleti ="http://www.mundodeportivo.com/feed/rss/futbol/atletico-madrid";
+    static String rssUrlMundoAtleti ="https://e00-elmundo.uecdn.es/elmundodeporte/rss/futbol.xml";
     private ProgressDialog progressDialog;
 
     private final Handler progressHandler = new Handler() {
@@ -50,14 +50,14 @@ public class MainActivity extends AppCompatActivity {
         actionBar.setDisplayShowHomeEnabled(true);
         actionBar.setIcon(R.mipmap.ic_launcher);
 
-        setTitle("  Atleti News");
+        setTitle("  Atleti News v2");
         ListView listado = (ListView) findViewById(R.id.listado);
 
         ImageButton boton_as = (ImageButton) findViewById(R.id.button_as);
         boton_as.setOnClickListener(new OnClickListener() {
             @Override
             public void onClick(View v) {
-                setTitle("  Noticias del As");
+                setTitle("Noticias de fútbol en el As");
                 loadData(rssUrlAs);
             }
         });
@@ -73,7 +73,7 @@ public class MainActivity extends AppCompatActivity {
         boton_md.setOnClickListener(new OnClickListener() {
             @Override
             public void onClick(View v) {
-                setTitle("Noticias del Mundo Deportivo");
+                setTitle("Noticias de El Mundo");
                 loadData(rssUrlMundoAtleti);
             }
         });
