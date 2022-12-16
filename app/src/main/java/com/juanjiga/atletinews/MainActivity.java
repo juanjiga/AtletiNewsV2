@@ -57,7 +57,7 @@ public class MainActivity extends AppCompatActivity {
         boton_as.setOnClickListener(new OnClickListener() {
             @Override
             public void onClick(View v) {
-                setTitle("Noticias de fútbol en el As");
+                setTitle("  Noticias de fútbol en el As");
                 loadData(rssUrlAs);
             }
         });
@@ -65,7 +65,7 @@ public class MainActivity extends AppCompatActivity {
         boton_marca.setOnClickListener(new OnClickListener() {
             @Override
             public void onClick(View v) {
-                setTitle("  Noticias del Marca");
+                setTitle("  Noticias en el Marca");
                 loadData(rssUrlMarca);
             }
         });
@@ -73,7 +73,7 @@ public class MainActivity extends AppCompatActivity {
         boton_md.setOnClickListener(new OnClickListener() {
             @Override
             public void onClick(View v) {
-                setTitle("Noticias de El Mundo");
+                setTitle("  Fútbol en El Mundo");
                 loadData(rssUrlMundoAtleti);
             }
         });

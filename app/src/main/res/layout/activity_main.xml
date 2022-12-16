@@ -36,12 +36,12 @@
             android:layout_weight="1"/>
 
         <ImageButton
+            android:id="@+id/button_md"
             android:layout_width="wrap_content"
             android:layout_height="wrap_content"
-            app:srcCompat="@drawable/md60x60"
-            android:id="@+id/button_md"
+            android:layout_weight="1"
             android:background="@color/colorBoton"
-            android:layout_weight="1"/>
+            app:srcCompat="@drawable/mundo60x60" />
     </LinearLayout>
     <ListView
         android:layout_width="match_parent"
